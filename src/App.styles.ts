@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0 20px;
     display: flex;
     justify-content: center;
+    font-size: 20px;
   }
 
   * {
