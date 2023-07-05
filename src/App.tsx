@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { GlobalStyle } from './App.styles';
+import { GlobalStyle, Wrapper } from './App.styles';
 
 import QuestionCard from './components/QuestionCard';
 
@@ -72,8 +72,8 @@ export const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <div className="App">
-        <h1>Quiz App</h1>
+      <Wrapper>
+        <h1>Quiz</h1>
         {gameOver && (
           <button className="start" onClick={startQuiz}>
             Start
@@ -99,7 +99,7 @@ export const App: React.FC = () => {
               Next question
             </button>
           )}
-      </div>
+      </Wrapper>
     </>
   );
 };

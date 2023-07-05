@@ -20,3 +20,15 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 `;
+
+
+export const Wrapper = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .score {
+    font-size : 2rem;
+    margin: 0;
+  }
+`
