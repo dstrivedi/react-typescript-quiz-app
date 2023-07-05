@@ -69,9 +69,11 @@ const App: React.FC = () => {
     }
   };
 
+  const GlobalStyleProxy: any = GlobalStyle;
+
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyleProxy />
       <div className="App">
         <h1>Quiz App</h1>
         {gameOver && (
