@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-image: url('./images/backgroundImage.jpg');
     background-size: cover;
     margin: 0;
     padding: 0 20px;

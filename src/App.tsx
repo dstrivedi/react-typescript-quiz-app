@@ -14,7 +14,7 @@ export type AnswerObject = {
   correct_answer: string;
 };
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   const [questions, setQuestions] = React.useState<QuestionState[]>([]);
   const [loading, setLoading] = React.useState(false);
   const [number, setNumber] = React.useState(0);
@@ -104,4 +104,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+// export default App;
