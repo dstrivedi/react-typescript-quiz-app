@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './style.css';
+import { GlobalStyle } from './App.styles';
 
 import QuestionCard from './components/QuestionCard';
 
@@ -70,34 +70,37 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="App">
-      <h1>Quiz App</h1>
-      {gameOver && (
-        <button className="start" onClick={startQuiz}>
-          Start
-        </button>
-      )}
-      {!gameOver && <p className="score">Score:{score}</p>}
-      {loading && <p>Loading questions ... </p>}
-      {!loading && !gameOver && (
-        <QuestionCard
-          questionNum={number + 1}
-          question={questions[number].question}
-          answers={questions[number].answers}
-          totalQuestions={TOTAL_QUESTIONS}
-          userAnswer={userAnswers ? userAnswers[number] : undefined}
-          callback={checkAnswer}
-        />
-      )}
-      {!loading &&
-        !gameOver &&
-        number !== TOTAL_QUESTIONS - 1 &&
-        userAnswers.length === number + 1 && (
-          <button className="next" onClick={nextQuestion}>
-            Next question
+    <>
+      <GlobalStyle />
+      <div className="App">
+        <h1>Quiz App</h1>
+        {gameOver && (
+          <button className="start" onClick={startQuiz}>
+            Start
           </button>
         )}
-    </div>
+        {!gameOver && <p className="score">Score:{score}</p>}
+        {loading && <p>Loading questions ... </p>}
+        {!loading && !gameOver && (
+          <QuestionCard
+            questionNum={number + 1}
+            question={questions[number].question}
+            answers={questions[number].answers}
+            totalQuestions={TOTAL_QUESTIONS}
+            userAnswer={userAnswers ? userAnswers[number] : undefined}
+            callback={checkAnswer}
+          />
+        )}
+        {!loading &&
+          !gameOver &&
+          number !== TOTAL_QUESTIONS - 1 &&
+          userAnswers.length === number + 1 && (
+            <button className="next" onClick={nextQuestion}>
+              Next question
+            </button>
+          )}
+      </div>
+    </>
   );
 };
 
