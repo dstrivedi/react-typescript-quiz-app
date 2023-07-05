@@ -77,7 +77,7 @@ const App: React.FC = () => {
           Start
         </button>
       )}
-      {!gameOver && <p className="score">Score:</p>}
+      {!gameOver && <p className="score">Score:{score}</p>}
       {loading && <p>Loading questions ... </p>}
       {!loading && !gameOver && (
         <QuestionCard
