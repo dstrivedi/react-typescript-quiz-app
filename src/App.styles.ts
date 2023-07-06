@@ -31,4 +31,12 @@ export const Wrapper = styled.div `
     font-size : 2rem;
     margin: 0;
   }
+  
+  .start, .next {
+    background: white;
+    height: 40px;
+    box-shadow: 1px 2px;  
+    width: 90%;
+    border-radius: 10px;
+  }
 `

@@ -5,7 +5,7 @@ export const Wrapper = styled.div `
     background-color: white;
     border-radius: 10px;
     padding: 20px;
-    margin: auto;
+    margin: 10px;
 `
 
 type ButtonWrapperProps = {
