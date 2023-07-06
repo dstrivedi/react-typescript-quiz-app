@@ -1,13 +1,12 @@
 {
   "name": "react-typescript-quiz-app",
   "version": "0.0.0",
-  "homepage": "https://dstrivedi.github.io/react-typescript-quiz-app",
+  "homepage": "https://dstrivedi.github.io/react-typescript-quiz-app/",
   "private": true,
   "dependencies": {
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@types/styled-components": "5.1.26",
-    "babel-plugin-styled-components": ">= 2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^6.0.2",
@@ -35,6 +34,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   }
 }
