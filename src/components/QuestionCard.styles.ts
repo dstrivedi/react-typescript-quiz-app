@@ -23,8 +23,8 @@ export const ButtonWrapper=styled.div<ButtonWrapperProps> `
         margin: 5px 0;
         background: ${({correct, userClicked}) => 
             correct 
-            ? 'red' : !correct && 
-            userClicked ? 'gray' : 'White'
+            ? 'gray' : !correct && 
+            userClicked ? 'red' : 'White'
         };
         box-shadow: 1px 2px ;
         text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
