@@ -13,7 +13,7 @@
   <p><font size="3">
       This is a React-Typescript Quiz App built using <strong><em>React.JS & Typescript</em></strong>. There are 10 questions in the quiz and you answer the questions and the app will calculate the score for you automatically. 
       <br><br> 
-      <strong><em>Take a look at the live version here:</em></strong> https://react-typescript-quiz-app-nine.vercel.app/ :octocat: :heart_eyes:
+      <strong><em>Take a look at the live version here:</em></strong> https://dstrivedi.github.io/react-typescript-quiz-app/ :octocat: :heart_eyes:
   </p>
 
 
