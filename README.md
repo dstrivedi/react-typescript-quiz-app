@@ -9,7 +9,7 @@
   </h1>
 
   <p><font size="3">
-      This is a React-Typescript Quiz App built using <strong><em>React.JS & Typescript</em></strong>. There are 10 questions in the quiz and you answer the questions and the app will calculate the score for you automatically. </p>
+      This is a React-Typescript Quiz App built using <strong><em>ReactJS, HTML, CSS & Typescript</em></strong>. There are 10 questions in the quiz and you answer the questions and the app will calculate the score for you automatically. </p>
       
 
 # Features
