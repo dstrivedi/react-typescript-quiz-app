@@ -17,13 +17,8 @@
 * Presents users with a series of quiz questions.
 * Automatically calculates the score based on the answers provided.
 
-  <strong><em>Take a look at the live version here:</em></strong> https://dstrivedi.github.io/react-typescript-quiz-app/ :octocat: :heart_eyes:
+<strong><em>Take a look at the live version here:</em></strong> https://dstrivedi.github.io/react-typescript-quiz-app/ :octocat: :heart_eyes:
  
-
-# Clikc on the below link to review the code and view the app
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-4xy6mq)
-
-
 # Getting Started
 To run the application locally, follow these steps:
 1. Clone the repository: git clone https://github.com/your-username/react-typescript-quiz-app.git
