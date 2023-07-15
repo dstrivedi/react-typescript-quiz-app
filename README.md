@@ -5,7 +5,7 @@
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png">
    </div>
   <h1 align="center">
-    React-Typescript Quiz App
+    Quiz App using React t& TypeScript
   </h1>
 
   <p><font size="3">
