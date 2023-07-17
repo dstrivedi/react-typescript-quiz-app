@@ -2,10 +2,11 @@ import * as React from 'react';
 import { GlobalStyle, Wrapper } from './App.styles';
 
 import QuestionCard from './components/QuestionCard';
+import ScoreBoard from './components/Scoreboard';
 
 import { fetchQuestions, Difficulty, QuestionState } from './API';
 
-const TOTAL_QUESTIONS: number = 10;
+const TOTAL_QUESTIONS: number = 2;
 
 export type AnswerObject = {
   question: string;
@@ -58,6 +59,9 @@ export const App: React.FC = () => {
         correct_answer: questions[number].correct_answer,
       };
       setUserAnswers([...userAnswers, answerObject]);
+      if (number === TOTAL_QUESTIONS - 1) {
+        setGameOver(true);
+      }
     }
   };
 
@@ -74,12 +78,15 @@ export const App: React.FC = () => {
       <GlobalStyle />
       <Wrapper>
         <h1>Quiz</h1>
+        {
+          gameOver && number === TOTAL_QUESTIONS - 1 && (<ScoreBoard score={score} totalQuestions={TOTAL_QUESTIONS}/> )
+        }
         {gameOver && (
           <button className="start" onClick={startQuiz}>
-            Start
+            {number === TOTAL_QUESTIONS - 1 ? "Start again" : "Start"}
           </button>
         )}
-        {!gameOver && <p className="score">Score:{score}</p>}
+        {!gameOver && <p className="score">Score : {score}</p>}
         {loading && <p>Loading questions ... </p>}
         {!loading && !gameOver && (
           <QuestionCard

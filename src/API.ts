@@ -20,7 +20,7 @@ export const fetchQuestions = async (
   difficulty: Difficulty
 ) => {
   const url = `https://opentdb.com/api.php?amount=${amount}&difficulty=${difficulty}`;
-  const result = await fetch(url)
+  const result = await fetch(url, { cache: 'force-cache' })
     .then((response) => response.json())
     .then((data) => {
       return data.results.map((question: Question) => ({
