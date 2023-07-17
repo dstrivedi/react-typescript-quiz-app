@@ -6,7 +6,7 @@ import ScoreBoard from './components/Scoreboard';
 
 import { fetchQuestions, Difficulty, QuestionState } from './API';
 
-const TOTAL_QUESTIONS: number = 2;
+const TOTAL_QUESTIONS: number = 10;
 
 export type AnswerObject = {
   question: string;
